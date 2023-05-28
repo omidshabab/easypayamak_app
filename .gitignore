@@ -1,3 +1,9 @@
+lib/data
+lib/.env
+
+.vscode
+.dart_tool
+
 # Miscellaneous
 *.class
 *.log
