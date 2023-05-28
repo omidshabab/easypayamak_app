@@ -6,9 +6,9 @@ abstract class Translation {
 }
 
 final Map<String, String> en = {
-  //
+  "appName": "Easy Payamak", // #1
 };
 
 final Map<String, String> fa = {
-  //
+  "appName": "ایزی پیامک", // #1
 };
