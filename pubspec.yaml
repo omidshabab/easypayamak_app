@@ -1,4 +1,4 @@
-name: easypayamak_app
+name: easypayamak
 description: A new Flutter project.
 
 
@@ -97,6 +97,12 @@ flutter:
         - asset: assets/fonts/Rokh/RokhFaNum-Bold.ttf
           weight: 700
 
+
+  assets:
+    - lib/.env # path to your .env
+    - assets/fonts/
+    - assets/svg/
+    - assets/images/
   
   
   

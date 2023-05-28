@@ -1,10 +1,10 @@
-import 'package:easypayamak_app/constants/routes.dart';
-import 'package:easypayamak_app/ui/pages/home/view.dart';
-import 'package:easypayamak_app/ui/pages/soon/view.dart';
+import 'package:easypayamak/constants/routes.dart';
+import 'package:easypayamak/constants/theme.dart';
+import 'package:easypayamak/ui/pages/home/view.dart';
+import 'package:easypayamak/ui/pages/soon/view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:get/route_manager.dart';
 import 'package:get_storage/get_storage.dart';
 
 Future<void> main() async {
@@ -41,7 +41,11 @@ class EasyPayamak extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: "appName".tr,
+      themeMode: ThemeMode.light,
+      theme: lightThemeData(context),
+      darkTheme: darkThemeData(context),
       locale: Locale("fa"),
+      initialRoute: Routes.home,
       unknownRoute: GetPage(name: Routes.soon, page: () => SoonView()),
       getPages: [
         GetPage(name: Routes.home, page: () => HomeView()),
