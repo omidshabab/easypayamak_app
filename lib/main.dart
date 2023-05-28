@@ -1,5 +1,6 @@
 import 'package:easypayamak/constants/routes.dart';
 import 'package:easypayamak/constants/theme.dart';
+import 'package:easypayamak/constants/translation.dart';
 import 'package:easypayamak/ui/pages/home/view.dart';
 import 'package:easypayamak/ui/pages/soon/view.dart';
 import 'package:flutter/material.dart';
@@ -50,6 +51,9 @@ class EasyPayamak extends StatelessWidget {
       getPages: [
         GetPage(name: Routes.home, page: () => HomeView()),
       ],
+      translationsKeys: Translation.translationsKeys,
+      fallbackLocale: const Locale("fa"),
+      defaultTransition: Transition.native,
     );
   }
 }

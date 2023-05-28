@@ -43,6 +43,9 @@ dependencies:
   flutter_svg: ^2.0.6
   figma_squircle: ^0.5.3
 
+  smooth_widgets:
+    path: /Users/omidshabab/Documents/GitHub/smooth_widgets
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
