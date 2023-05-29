@@ -4,18 +4,6 @@ description: A new Flutter project.
 
 publish_to: 'none' 
 
-
-
-
-
-
-
-
-
-
-
-
-
 version: 1.0.0+1
 
 environment:
@@ -31,9 +19,6 @@ dependencies:
   flutter:
     sdk: flutter
 
-
-  
-  
   cupertino_icons: ^1.0.2
   get: ^4.6.5
   get_storage: ^2.1.1
